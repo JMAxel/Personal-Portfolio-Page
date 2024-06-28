@@ -1,72 +1,62 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<title>JM Portfolio</title>
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap');
+		</style>
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<nav id="navbar" class="nav">
 			<ul class="nav-list">
 				<li>
-					<a href="#welcome-section">About</a>
+					<a href="#welcome-section">Sobre</a>
 				</li>
 				<li>
-					<a href="#projects">Projects</a>
+					<a href="#projects">Projetos</a>
 				</li>
 				<li>
-					<a href="#contact">Contact</a>
+					<a href="#contact">Contato</a>
 				</li>
 			</ul>
 		</nav>
 		<section id="welcome-section" class="welcome-section">
-			<h1>Hey I am JM</h1>
-			<p>a Full Stack Developer</p>
+			<h1>JM</h1>
+			<p class="typing-animation">Desenvolvedor Web&nbsp;</p>
 		</section>
 		<section id="projects" class="projects-section">
-			<h2 class="projects-section-header">These are some of my projects</h2>
+			<h2 class="projects-section-header">Projetos</h2>
 			<div class="projects-grid">
-				<a href="#" target="_blank" class="project project-tile">
-					<img class="project-image" src="https://media.discordapp.net/attachments/706388003320496158/1247916287519359036/image.png?ex=6661c41c&is=6660729c&hm=336b7bb8e24ef0930bf025cd38f5e71d088cc6018ad218e99b16345b8a910adc&=&format=webp&quality=lossless&width=825&height=463" alt="project image">
+				<a href="https://axelpokedex.netlify.app" target="_blank" class="project project-tile">
+					<img class="project-image" src="pokedex.png" alt="pokedex image">
 					<p class="project-title">
-						<span class="code">< </span>Lorem Ipsum<span class="code"> /></span>
+						<span class="code"><</span>Pokedex<span class="code">/></span>
 					</p>
-				</a>
-				<a href="#" target="_blank" class="project project-tile">
-					<img class="project-image" src="https://media.discordapp.net/attachments/706388003320496158/1247916287519359036/image.png?ex=6661c41c&is=6660729c&hm=336b7bb8e24ef0930bf025cd38f5e71d088cc6018ad218e99b16345b8a910adc&=&format=webp&quality=lossless&width=825&height=463" alt="project image">
-					<p class="project-title">
-						<span class="code">< </span>Lorem Ipsum<span class="code"> /></span>
-					</p>
-				</a>
-				<a href="#" target="_blank" class="project project-tile">
-					<img class="project-image" src="https://media.discordapp.net/attachments/706388003320496158/1247916287519359036/image.png?ex=6661c41c&is=6660729c&hm=336b7bb8e24ef0930bf025cd38f5e71d088cc6018ad218e99b16345b8a910adc&=&format=webp&quality=lossless&width=825&height=463" alt="project image">
-					<p class="project-title">
-						<span class="code">< </span>Lorem Ipsum<span class="code"> /></span>
-					</p>
-				</a>
-				<a href="#" target="_blank" class="project project-tile">
-					<img class="project-image" src="https://media.discordapp.net/attachments/706388003320496158/1247916287519359036/image.png?ex=6661c41c&is=6660729c&hm=336b7bb8e24ef0930bf025cd38f5e71d088cc6018ad218e99b16345b8a910adc&=&format=webp&quality=lossless&width=825&height=463" alt="project image">
-					<p class="project-title">
-						<span class="code">< </span>Lorem Ipsum<span class="code"> /></span>
-					</p>
+					<span class="project-description">Projeto feito para aprender aplicação de API, utilizando a API open source PokeAPI</span>
 				</a>
 			</div>
 			<a href="https://github.com/JMAxel" id="profile-link" class="btn btn-see-more" target="_blank">
-				See More
+				Mais repositórios
 			</a>
 		</section>
 		<section id="contact" class="contact-section">
 			<div class="contact-section-header">
-				<h2>Have an idea? Let me know...</h2>
-				<p>Allow me to help your project to come true.</p>
+				<h2>Contato</h2>
 			</div>
 			<div class="contact-links">
-				<a href="#" target="_blank" class="btn contact-details">
-					Discord
+				<a href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCKCDBljKjqMGPTPNLCScVNkbCcQQlGchVRRFVZnbGRmhWCzglswrWgwqQvbzQWHGpvhmbkg" target="_blank" class="btn contact-details">
+					<img class="image-format" src="gmail-logo.png" alt="gmail icon">
 				</a>
-				<a href="#" target="_blank" class="btn contact-details">
-					GitHub
+				<a href="https://github.com/JMAxel" target="_blank" class="btn contact-details">
+					<img class="image-format" src="github.png" alt="github icon">
 				</a>
-				<a href="#" target="_blank" class="btn contact-details">
-					Email
+				<a href="https://www.linkedin.com/in/joão-miguel-g-0843581a2/" target="_blank" class="btn contact-details">
+					<img class="image-format" src="Linkedin.png" alt="Linkedin icon">
 				</a>
 			</div>
 		</section>
