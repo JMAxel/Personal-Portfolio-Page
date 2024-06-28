@@ -50,6 +50,7 @@ h1, h2 {
 h1 {
 	font-size: 9rem;
 	font-family: "press start 2p";
+	z-index: 1;
 }
 
 h2 {
@@ -70,6 +71,25 @@ img {
 	width: 100%;
 }
 
+.main-circle {
+	position: absolute;
+	background-color: var(--main-purple);
+	padding: 100px;
+	border-radius: 100px;
+	z-index: 0;
+	box-shadow: 0 0 4px #331950, 0 0 8px #331950, 0 0 12px #331950, 0 0 16px #331950;
+	animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 4px #331950, 0 0 8px #331950, 0 0 12px #331950, 0 0 16px #331950;
+    }
+    100% {
+        box-shadow: 0 0 8px #331950, 0 0 28px #331950, 0 0 40px #331950, 0 0 60px #331950;
+    }
+}
+
 .nav {
 	display: flex;
 	justify-content: flex-end;
@@ -80,6 +100,7 @@ img {
 	border-bottom: 2px solid var(--main-purple);
 	backdrop-filter: blur(5px);
 	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 2;
 }
 
 .nav-list {
@@ -131,6 +152,7 @@ img {
 	overflow: hidden;
 	border-right: 2px solid #333;
 	animation: typing 1s steps(10, end) infinite;
+	z-index: 1;
 }
 
 @keyframes typing {
@@ -180,9 +202,9 @@ img {
 }
 
 .project {
+	border-radius: 20px;
 	border: 2px solid var(--main-purple);
 	box-shadow: 10px 10px 10px rgba(112, 17, 131, 0.5);
-	border-radius: 2px;
 	width: 50%;
 	align-items: center;
 	padding-bottom: 1em;
@@ -293,4 +315,14 @@ footer i {
 		flex-direction: column;
 		text-align: center;
 	}
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--main-purple);
+	border-radius: 50px;
 }
