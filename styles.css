@@ -386,6 +386,18 @@ img {
 	font-family: "press start 2p";
 }
 
+@media (max-width: 570px) {
+	.project-title {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 420px) {
+	.project-title {
+		font-size: 1.2rem;
+	}
+}
+
 .project-button {
 	display: inline-block;
 	padding: 1rem 2rem;
